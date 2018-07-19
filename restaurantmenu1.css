@@ -1,0 +1,76 @@
+
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v14/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v14/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'Supermercado One';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Supermercado One Regular'), local('SupermercadoOne-Regular'), url(https://fonts.gstatic.com/s/supermercadoone/v7/OpNXnpQWg8jc_xps_Gi14kVVEXOn20H9MQtCVTo.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  html {
+    background-image: url("https://github.com/KenzieAcademy/restaurantmenu/blob/master/map-bg.jpg?raw=true");
+    
+}
+
+
+
+/* Use the 'Lato' font family at 18px throughout the body of the document, and cover the background with the 'map-bg.jpg' image. DONE */
+nav {font-family: 'Lato'; font-size: 18px;}
+
+#main {width: 900px; margin: 10px auto;}
+/* Use the 'Supermercado One' font at 45px (colored #5d4037) for the restaurant name. DONE*/
+h1 {
+    font-family: 'supermercado one';
+    font-size: 45px;
+    color: #5d4037;
+    
+    }
+/* Set the separator between the columns (the "column-rule") to be 2px dashed rosybrown.DONE */
+#menu {columns: 400px 2; column-gap: 100px; column-rule:2px dashed rosybrown;}
+section {margin-bottom: 50px;}
+
+/* Show each of the section headings of the menu (e.g. "Starters") in small caps, colored #6d4c41. DONE*/
+h2 {margin: 0;
+font-variant: small-caps;
+color:#6d4c41;}
+
+/* Make the name of each menu item appear in bold in a 20px size. DONE */
+
+dt {
+font-weight: bold;
+font-size: 20px;
+
+}
+
+
+
+dd {margin: 0 0 12px 0; display: flex;}
+
+.details {order: 1;}
+
+/* Show the price of each item in a large font, in the color named 'firebrick' */
+.price {order: 2; padding-left: 10px;
+font-weight:large; 
+color:firebrick;}
+
+/* Draw a 2px dashed rosybrown border around the address/footer */
+address {padding: 10px;}
+footer {
+    border: 2px dashed rosybrown;
+}
