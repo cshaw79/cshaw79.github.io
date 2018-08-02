@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("add")
+        function add(a, b) {
+            return a + b;
+    }   var a = 2;
+        var b = 4;
+        var c = a + b;
+        console.log(c);
+
+        console.log("multiply")
+        function mult(x,y) {
+            let result = 0;
+            for (let i = 0; i < y; i++) {
+                result = add(result, x)
+
+            }
+            return result;
+
+        }
+        console.log(mult(6,8))
+
+        console.log("power")
+        function power(x,y) {
+            let result = 1;
+            for (let i = 0; i < y; i++) {
+                result = mult(result, x)
+
+            }
+            return result;
+
+        }
+        console.log(power(2,8))
+
+        console.log("Factorial")
+        function factorial(x,y) {
+            let result = 1;
+            for (let i = 0; i < y; i++) {
+                result = factorial(result, x)
+
+            }
+            return result;
+
+        }
+        console.log(factorial(4))
+
+
+
+
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </script>
+</body>
+</html>
